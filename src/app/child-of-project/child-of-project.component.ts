@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-child-of-project',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./child-of-project.component.css']
 })
 export class ChildOfProjectComponent {
-
+@Input() childProject : any;
+@Input() childIndex : any;
 }

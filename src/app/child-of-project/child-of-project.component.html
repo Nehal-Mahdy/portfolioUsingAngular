@@ -1,1 +1,15 @@
-<p>child-of-project works!</p>
+      <div class="card shadow-sm" >
+                <img [src]="childProject.img" alt="">
+                <div class="card-body" [ngClass]="{'odd': (childIndex+1) % 2 === 0 , 'even': (childIndex+1) % 2 !==0}">
+                  <p class="card-title">{{childProject.title}}</p>
+                  <p class="card-text">{{childProject.skillsUsed}}</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a [href]="childProject.link">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on GitHub</button>
+                   </a> 
+                </div>
+
+            </div>
+              </div>
+            </div>
