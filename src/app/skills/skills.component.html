@@ -1,0 +1,103 @@
+<div class ="container-fluid mb-3 mt-5 text-center" style="background-color:#b8b4b4; padding-bottom:30px ;">
+     <h1 class=" pt-3 " style="top: auto; color: #61677A;">
+            {{myskills}}
+            </h1> 
+            <div class="w-50 " style="color: #61677A; position: relative; left: 25%;"> 
+            <p>
+              My passion for programming has driven me to learn these skills. My ambition to become a professional web developer has led me to be eager to learn these skills and more.
+              I have been able to deploy these skills in many projects.
+            </p>
+          </div>
+          <hr>
+            <div class ="row justify-content-center" style="top: 10%;">
+  <div class ="col-md-6 col-sm-6 text-center" style="color: #61677A; font-weight: bold; " > 
+          <h3 >My focus</h3>
+          <hr style=" border: 1px solid rgb(48, 43, 43); width: 30%; position: relative; left: 35%;"  >
+          <ul>
+            <li>
+              Web Design
+            </li>
+            <li>
+              UI/UX Design
+            </li>
+            <li>
+              Responsive Design
+            </li>
+            <li>
+              Problem Solving
+            </li>
+            <li>
+              Database Management
+            </li>
+            
+            <li>
+              Front end Web Development
+            </li>
+            <li>
+              Back end Web Development
+
+            </li>
+            <li>
+              API Design and Development
+            </li>
+          </ul>
+           
+  </div> 
+<div class ="col-md-6 col-sm-6 " style="color: white; font-weight: bold; " >
+<div class = "container mt-5">  
+
+    <div *ngFor="let skill of skills">
+    <div class = "progress" style = "height: 20px">  
+    <div class = "progress-bar" [style] = "skill.width">  
+     <b> {{skill.name}} </b>   
+    </div>  
+    </div> <br> 
+   </div>
+    <!-- <div class = "progress" style = "height: 20px">  
+    <div class = "progress-bar" style = " width:80%">    
+    <b> CSS </b> </div>  
+    </div> <br>  
+    <div class = "progress" style = "height: 20px">  
+    <div class = "progress-bar" style = "width: 95%">    
+    <b> Bootstrap </b> </div>  
+    </div> <br>  
+    <div class = "progress" style = "height: 20px">  
+    <div class = "progress-bar" style = " width: 90%;">   
+    <b> JavaScript </b> </div>  
+    </div>  
+    <br>
+    <div class = "progress" style = "height: 20px">  
+    <div class = "progress-bar" style = " width: 80%;">   
+    <b> JQuery </b> </div>  
+    </div>
+    <br>  
+    <div class = "progress" style = "height: 20px">  
+   <div class = "progress-bar" style = "width: 90%;">   
+    <b> Node.JS </b> </div>  
+     </div>
+    <br> 
+     <div class = "progress" style = "height: 20px">  
+    <div class = "progress-bar" style = " width: 80%;">   
+     <b> GitHub </b> </div>  
+     </div>  
+     <br>
+    <div class = "progress" style = "height: 20px">  
+    <div class = "progress-bar" style = " width: 85%;">   
+    <b>MongoDB  </b> </div>  
+    </div>
+    <br>  
+    <div class = "progress" style = "height: 20px">  
+     <div class = "progress-bar" style = " width: 82%;">   
+     <b> MYSQL </b> </div>  
+    </div>
+    <br>  
+     <div class = "progress" style = "height: 20px">  
+     <div class = "progress-bar" style = " width: 80%;">   
+        <b> Angular </b> </div>  
+      </div>   -->
+    </div>  
+    </div>
+    
+</div>
+
+</div>

@@ -1,0 +1,111 @@
+<div class ="container-fluid mb-3 mt-5 text-center" style=" padding-bottom:30px ;">
+
+    <h1 class=" pt-3 " style="top: auto; color: #61677A;">
+        Portfolio
+        </h1> 
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+    
+            <div class="col" *ngFor="let project of projects; let i = index;"  >
+              <div class="card shadow-sm"  >
+                <img [src]="project.img" alt="">
+                <div class="card-body" [ngClass]="{'odd': (i+1) % 2 === 0 , 'even': (i+1) % 2 !==0}">
+                  <p class="card-title">{{project.title}}</p>
+                  <p class="card-text">{{project.skillsUsed}}</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a [href]="project.link">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on GitHub</button>
+                   </a> 
+                </div>
+
+            </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assets/Screenshot 2023-09-10 081818.png" alt="">
+                <div class="card-body">
+                  <p class="card-title">Dice Game</p>
+                  <p class="card-text">HTML, CSS and JavaScript</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="https://nehal-mahdy.github.io/diceGame/">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on GitHub</button>
+                    </a>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assets/Screenshot 2023-09-10 082148.png" alt="">
+                <div class="card-body">
+                    <p class="card-title">Drum Kit</p>
+                  <p class="card-text">HTML, CSS and JavaScript</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="https://nehal-mahdy.github.io/drumkit/">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on GitHub</button>
+                    </a>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+               <img src="/assets/Screenshot 2023-09-10 082317.png" alt="">
+                <div class="card-body">
+                    <p class="card-title">Simon Game</p>
+                    <p class="card-text">HTML, CSS and JavaScript</p>  
+                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="https://nehal-mahdy.github.io/html-SimonGame/">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on GitHub</button>
+                    </a>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assets/Screenshot 2023-09-10 082429.png" alt="">
+                <div class="card-body">
+                    <p class="card-title">Soulful House</p>
+                    <p class="card-text">HTML, CSS, BootStrap and JavaScript</p>  
+         
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on GitHub</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assets/Screenshot 2023-09-10 082533.png" alt="">
+                <div class="card-body">
+                    <p class="card-title">Hosto</p>
+                    <p class="card-text">HTML, CSS, BootStrap</p>  
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View on GitHub</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+</div>
